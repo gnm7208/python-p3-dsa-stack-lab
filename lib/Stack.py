@@ -9,6 +9,7 @@ class Stack:
         return len(self.items) == 0
 
     def push(self, item):
+        # Add item to top of stack if not full
         if len(self.items) < self.limit:
             self.items.append(item)
         else:
