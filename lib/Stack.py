@@ -39,6 +39,6 @@ class Stack:
     def search(self, target):
         # Find distance from top of stack to target element
         if target in self.items:
-            reversed_stack = self.items[::-1]
-            return reversed_stack.index(target)
+            reversed_items = self.items[::-1]
+            return reversed_items.index(target)
         return -1
