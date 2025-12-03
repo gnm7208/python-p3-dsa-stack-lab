@@ -5,6 +5,7 @@ class Stack:
         self.limit = limit
 
     def isEmpty(self):
+        # Check if stack is empty
         return len(self.items) == 0
 
     def push(self, item):
