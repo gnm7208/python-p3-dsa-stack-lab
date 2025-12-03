@@ -32,6 +32,7 @@ class Stack:
         return len(self.items)
 
     def full(self):
+        # Check if stack is at capacity
         return self.size() >= self.limit
 
     def search(self, target):
