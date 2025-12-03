@@ -22,6 +22,7 @@ class Stack:
         return None
 
     def peek(self):
+        # Return top item without removing it
         if not self.isEmpty():
             return self.items[-1]
         return None
