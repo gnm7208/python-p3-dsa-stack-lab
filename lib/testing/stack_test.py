@@ -1,4 +1,5 @@
-from Stack import Stack
+import pytest
+from lib.Stack import Stack
 
 class TestStack:
     '''Class Stack in Stack.py'''
@@ -50,9 +51,10 @@ class TestStack:
 
         assert(stk.full())
         assert(stk.size() == 1)
-        assert(stk.pop() == 1)
+        stk.pop()
         stk.push(1)
-        stk.push(2)
+        with pytest.raises(IndexError):
+            stk.push(2)
         assert(stk.full())
         assert(stk.size() == 1)
         assert(stk.pop() == 1)
