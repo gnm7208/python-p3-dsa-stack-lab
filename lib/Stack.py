@@ -1,4 +1,5 @@
 class Stack:
+    """A Stack implementation using a list as the underlying data structure."""
 
     def __init__(self, items = [], limit = 100):
         self.items = list(items)
