@@ -2,6 +2,7 @@ class Stack:
     """A Stack implementation using a list as the underlying data structure."""
 
     def __init__(self, items = [], limit = 100):
+        """Initialize stack with optional items and limit."""
         self.items = list(items)
         self.limit = limit
 
