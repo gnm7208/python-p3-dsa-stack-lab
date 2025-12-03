@@ -16,6 +16,7 @@ class Stack:
             raise IndexError("Stack is full")
 
     def pop(self):
+        # Remove and return top item from stack
         if not self.isEmpty():
             return self.items.pop()
         return None
