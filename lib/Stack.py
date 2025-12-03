@@ -28,6 +28,7 @@ class Stack:
         return None
     
     def size(self):
+        # Return number of items in stack
         return len(self.items)
 
     def full(self):
